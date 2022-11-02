@@ -34,6 +34,7 @@
                 border: 1px solid rgb(0, 0, 0);
                 border-radius: 10px;
                 width: 100px;
+                display: inline
                 
             }
             .b {
@@ -56,6 +57,9 @@
                 float: right
                 
             }
+            .d {
+               position: relative;             
+            }
         </style>
     </head>
     <body>
@@ -77,6 +81,28 @@
             <div class="c">block 4</div>
             <div class="c">block 5</div>
             <div class="c">block 6</div>
+
+            <h1>Relative</h1>
+            <div class="d" style="top: 15px; left: 30px;">В тот год осенняя погода</div>
+            <div class="d" style="top: 15px; left: 270px;">Стояла долго на дворе,</div>
+            <div class="d" style="top: 15px; left: 30px;">Зимы ждала, ждала природа</div>
+            <div class="d" style="top: 15px; left: 270px;">Снег выпал только в январе</div>
+
+            <h1>Absolute</h1>
+            <div>На третье в ночь. Проснувшись рано,</div>
+            <div>В окно увидела Татьяна</div>
+            <div style="position: absolute; left: 200px; top: 100px">Поутру побелевший двор,</div>
+            <div>Куртины, кровли и забор,</div>
+
+            <h1>Fixed</h1>
+            <div style="position: fixed; bottom: 300px; right: 300px; color: red;" >
+                На стеклах легкие узоры,
+                Деревья в зимнем серебре,
+                Сорок веселых на дворе
+                И мягко устланные горы
+                Зимы блистательным ковром.
+                Все ярко, все бело кругом. 
+            </div>
 
             <div style="clear: both">end</div> 
         </div>
