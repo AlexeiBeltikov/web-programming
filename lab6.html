@@ -12,28 +12,33 @@
 
             console.log('x=', x, 's=', s);
 
-            let if = 17;
+            //let if = 17;
         </script>
+        <script src="lab6.js"></script>
     </head>
     <body>
         <div class="header">
-            Бельтиков Алексей
+            <div id="student">Бельтиков Алексей</div>
+            <div class="language">
+                <input type="button" value="ru" onclick="setRussian()">
+                <input type="button" value="en" onclick="setEnglish()">
+            </div>
         </div>
 
         <div class="content">
             <form>
                 <div>
                     <div>
-                        <span>Ваше имя</span>: <input type="text">
+                        <span>Ваше имя</span>: <input type="text" id="input-name" placeholder="введите имя">
                     </div>
-                    <div> <span>Ваша фамилия</span>: <input type="text">
-                    </div>
-                    <div>
-                        <span>Ваш возраст</span>: <input type="number">
+                    <div> <span>Ваша фамилия</span>: <input type="text" id="input-surname" placeholder="введите фамилию">
                     </div>
                     <div>
-                        <input type="button" value="Ок">
-                        <input type="reset" value="Сброс">
+                        <span>Ваш возраст</span>: <input type="number" id="input-age" placeholder="введите возраст">
+                    </div>
+                    <div>
+                        <input type="button" value="Ок" id="ok-button">
+                        <input type="reset" value="Сброс" id="reset-button">
                     </div>
                 </div>
             </form>
@@ -41,7 +46,7 @@
             </form>
         </div>
 
-        <div class="footer">
+        <div class="footer" id="footer">
             Факультет бизнеса, ФБИ-01, 3 курс, 2022
         </div>
     </body>
