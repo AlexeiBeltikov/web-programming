@@ -30,16 +30,20 @@ function showAlert() {
     document.getElementById('user-data').style.backgroundColor = color 
 }
 
-function makeStairs() {
-    let stairs = document.querySelector('#stairs');
-    let stepCount = 5;
-    for (let i = 0; i<stepCount; i++) {
-        stairs.innerHTML += '<div class="step"></div>';
+function Snow() {
+    let Snowles = document.querySelector('#Snowles');
+    let snowCount = 100;
+    for (let i = 0; i<snowCount; i++) {
+        Snowles.innerHTML += '<img class="snowsnow" src=https://cdn-icons-png.flaticon.com/512/2530/2530005.png>';
     }
-    let steps = document.querySelectorAll('.step');
-    for (let i = 0; i <steps.length; i++) {
-        steps[i].style.left = (30 * 10*i) + 'px';
-        steps[i].style.top = (300 + 80*i) + 'px';
-        steps[i].innerHTML = 'Блок номер' + ' ' + Number(i+1);
+    
+    let snowsnow = document.querySelectorAll('.snowsnow');
+    let screenWidth = window.screen.width;
+    let screenHeight = window.screen.height;
+
+    for (let i = 0; i<snowsnow.length; i++) {
+        snowsnow[i].style.left = Math.random()*window.innerWidth + 'px';
+        snowsnow[i].style.top = Math.random()*window.innerHeight + 'px';
+        snowsnow[i].style.width = Math.random()* 100 + 'px';
     }
 }
