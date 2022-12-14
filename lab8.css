@@ -25,14 +25,18 @@ body {
     left: 0;
     right: 0;
 }
-.header .language {
-    position: absolute;
-    right: 30px;
-    top: 0px;
-}
 
 .content {
     padding-left: 25px;
     font-style: italic;
+    font-weight: bold;
+}
+
+#time {
+    text-align: right;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
     font-weight: bold;
 }
