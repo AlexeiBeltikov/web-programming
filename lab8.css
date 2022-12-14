@@ -34,4 +34,5 @@ body {
 .content {
     padding-left: 25px;
     font-style: italic;
+    font-weight: bold;
 }
