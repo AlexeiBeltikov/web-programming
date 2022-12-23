@@ -31,6 +31,10 @@ body {
     top: 0px;
 }
 
-.clickMe4raza {
-background-color: black;
+#coords {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    color: white;
+    text-align: center;
 }
