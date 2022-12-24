@@ -80,3 +80,14 @@ window.addEventListener('DOMContentLoaded', function() {
     text[1].addEventListener('blur',showBlur);
     text[2].addEventListener('blur',showBlur);
 });
+
+function showChange(event) {
+    document.getElementById('output').innerHTML=event.target.value;
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+    let text = document.querySelectorAll('input[type = "text"]');
+    text[0].addEventListener('change',showChange);
+    text[1].addEventListener('change',showChange);
+    text[2].addEventListener('change',showChange);
+});
